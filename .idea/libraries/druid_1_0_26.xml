@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="druid-1.0.26">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/nutz/druid-1.0.26.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/nutz/mysql-connector-java-5.1.40.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
