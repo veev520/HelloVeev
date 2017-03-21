@@ -7,6 +7,11 @@
         <element id="directory" name="classes">
           <element id="module-output" name="HelloVeev" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="nutz-1.r.60-javadoc" />
+          <element id="library" level="project" name="druid-1.0.26" />
+          <element id="library" level="project" name="servlet-api" />
+        </element>
       </element>
     </root>
   </artifact>
