@@ -15,7 +15,15 @@
     <filter-mapping>
         <filter-name>nutz</filter-name>
         <url-pattern>/*</url-pattern>
+        <dispatcher>REQUEST</dispatcher>
+        <dispatcher>FORWARD</dispatcher>
+        <dispatcher>INCLUDE</dispatcher>
     </filter-mapping>
+
+    <error-page>
+        <error-code>500</error-code>
+        <location>/WEB-SRC/html/500.html</location>
+    </error-page>
 
     <welcome-file-list>
         <welcome-file>index.html</welcome-file>

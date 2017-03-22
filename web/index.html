@@ -2,9 +2,46 @@
 <html lang="cn">
 <head>
     <meta charset="UTF-8">
-    <title>Veev</title>
+    <!-- 对视窗缩放等级进行限制，使其适应移动端屏幕大小 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>拿来练手</title>
+    <!--css-->
+    <link href="WEB-SRC/dist/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="WEB-SRC/css/main.css" rel="stylesheet">
+    <!--javascript-->
+    <script src="WEB-SRC/dist/jquery/jquery-3.2.0.js" type="text/javascript"></script>
+    <script src="WEB-SRC/dist/vue/vue.js" type="text/javascript"></script>
 </head>
 <body>
-Hello World! 王伟大好人
+
+<header class="navbar navbar-static-top header" id="top" role="banner">
+    <div class="container">
+        <div class="navbar-header">
+            <button class="navbar-toggle" type="button" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand">拿来练手</a>
+        </div>
+        <nav class="navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="#" class="head-item">Veev</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#" id="time" class="head-item">{{ timeMsg }}</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="container">
+    <h1>See U</h1>
+    Hello, See U!<br>
+    xiao feng.
+</div>
+
+<script src="WEB-SRC/js/main.js" type="text/javascript"></script>
 </body>
 </html>

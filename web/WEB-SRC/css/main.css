@@ -1,0 +1,24 @@
+body{
+    background: #f3f9f3;
+}
+.header {
+    background-color: #38b082;
+}
+.header a {
+    color: #fff;
+}
+/* 重写 nav > li > a， 使得hover和focus改变为自定义的颜色和样式 */
+.nav > li > a {
+    transition: transform 300ms;
+}
+.nav > li > a:hover,
+.nav > li > a:focus {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0.382);
+    transform: scale(1.1);
+}
+/* bs3 container: 默认padding-l&r: 15px, 这里覆盖为0 */
+.container {
+    padding: 0;
+}
