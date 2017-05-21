@@ -16,7 +16,7 @@ public class MainSetup implements Setup {
     public void init(NutConfig nc) {
         Ioc ioc = nc.getIoc();
         Dao dao = ioc.get(Dao.class);
-        Daos.createTablesInPackage(dao, "club.veev.hello", false);
+        Daos.createTablesInPackage(dao, "club.veev.hello.nutz.bean", false);
 
         Log.i("程序起来啦");
     }

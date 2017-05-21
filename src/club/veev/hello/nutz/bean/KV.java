@@ -10,16 +10,16 @@ import java.util.Date;
 /**
  * Created by Veev on 2017/3/21
  */
-@Table("user")
-public class User {
+@Table("k_v")
+public class KV {
 
     @Id
     private int id;
     @Name
-    @Column("username")
-    private String username;
-    @Column("password")
-    private String password;
+    @Column("_key")
+    private String key;
+    @Column("_value")
+    private String value;
     @Column
     private String salt;
     @Column("createdAt")
@@ -27,12 +27,20 @@ public class User {
     @Column("updatedAt")
     private Date updatedAt;
 
+    public KV() {
+    }
+
+    public KV(String key, String value) {
+        this.key = key;
+        this.value = value;
+    }
+
     @Override
     public String toString() {
-        final StringBuffer sb = new StringBuffer("User{");
+        final StringBuffer sb = new StringBuffer("KV{");
         sb.append("id=").append(id);
-        sb.append(", username='").append(username).append('\'');
-        sb.append(", password='").append(password).append('\'');
+        sb.append(", key='").append(key).append('\'');
+        sb.append(", value='").append(value).append('\'');
         sb.append(", salt='").append(salt).append('\'');
         sb.append(", createdAt=").append(createdAt);
         sb.append(", updatedAt=").append(updatedAt);
@@ -48,20 +56,20 @@ public class User {
         this.id = id;
     }
 
-    public String getUsername() {
-        return username;
+    public String getKey() {
+        return key;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setKey(String key) {
+        this.key = key;
     }
 
-    public String getPassword() {
-        return password;
+    public String getValue() {
+        return value;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setValue(String value) {
+        this.value = value;
     }
 
     public String getSalt() {
