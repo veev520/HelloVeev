@@ -45,4 +45,10 @@ public class KVModule extends BaseModule {
     public int remove(@Param("key")String key) {
         return dao.delete(KV.class, key);
     }
+
+    @At
+    public boolean hasKey(@Param("key")String key) {
+        KV kv = dao.fetch(KV.class, key);
+        return kv == null;
+    }
 }
